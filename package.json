@@ -1,0 +1,20 @@
+{
+  "name": "blog-microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "post": "nodemon posts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/consoledot/blog-microservices.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/consoledot/blog-microservices/issues"
+  },
+  "homepage": "https://github.com/consoledot/blog-microservices#readme"
+}
