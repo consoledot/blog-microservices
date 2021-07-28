@@ -5,11 +5,13 @@ const app = express();
 app.use(bodyParser.json());
 
 const post = {};
-app.get("/post", (req, res) => {});
+app.get("/posts", (req, res) => {
+  res.status(200).send(post);
+});
 
-app.post("/post", (req, res) => {
+app.post("/posts", (req, res) => {
   const id = randomBytes(4).toString("hex");
-  const title = req.body;
+  const { title } = req.body;
   post[id] = {
     id,
     title,
@@ -17,4 +19,4 @@ app.post("/post", (req, res) => {
   res.status(201).send(post[id]);
 });
 
-app.listen(4000, () => console.log("Listening on 4000"));
+app.listen(4000, () => console.log("Listening on port 4000"));
