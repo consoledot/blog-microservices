@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "post": "nodemon posts",
-    "comment": "nodemon comments"
+    "comment": "nodemon comments",
+    "event": "nodemon event"
   },
   "repository": {
     "type": "git",
